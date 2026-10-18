@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a3128">
+  <meta name="description" content="Discover Compass Properties homes in Addis Ababa. Explore current apartment offers, book a visit, or contact our team.">
+  <title>Compass Properties | Addis Ababa, Ethiopia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <script type="module" src="js/public-data.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Compass Properties home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 52 52" focusable="false">
+          <circle cx="26" cy="26" r="23" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M26 3 32 20 49 26 32 32 26 49 20 32 3 26 20 20Z" fill="currentColor"/>
+          <path d="M17 25.5 26 18l9 7.5V36H17Z" fill="var(--paper)"/>
+          <path d="M23 29h6v7h-6zM19.5 27h2.8v2.8h-2.8zm10.2 0h2.8v2.8h-2.8z" fill="var(--forest)"/>
+        </svg>
+      </span>
+      <span class="brand-wordmark">COMPASS<small>PROPERTIES</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#offers">Latest offers</a>
+      <a href="#about">About us</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="tel:0985505722">Call 0985505722</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Featured Compass Properties projects">
+      <div class="hero-slides" aria-live="off">
+        <article class="hero-slide is-active" aria-hidden="false">
+          <img class="hero-image" src="images/photo_2026-03-26_22-09-31.jpg" alt="Compass Properties residential tower in Addis Ababa">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="eyebrow light">ADDIS ABABA · ETHIOPIA</p>
+            <h1>Homes for life<br>in <em>Addis.</em></h1>
+            <p class="hero-intro">Thoughtfully planned homes and spaces in the city we call home.</p>
+            <a class="button button-primary" href="#projects">Explore our projects <span aria-hidden="true">↓</span></a>
+          </div>
+        </article>
+        <article class="hero-slide" aria-hidden="true">
+          <img class="hero-image" src="images/photo_2026-03-26_22-09-28.jpg" alt="Compass Properties residential development in Meskel Flower">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="eyebrow light">DELIVERED · MESKEL FLOWER</p>
+            <h1>Made for<br><em>belonging.</em></h1>
+            <p class="hero-intro">Discover delivered Compass homes in Addis Ababa.</p>
+            <a class="button button-primary" href="#contact" data-contact-project="Meskel Flower">Ask about Meskel Flower <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="hero-slide" aria-hidden="true">
+          <img class="hero-image" src="images/photo_2026-03-26_22-09-30.jpg" alt="Compass Properties project in Kazanchis">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="eyebrow light">NOW BUILDING · KAZANCHIS</p>
+            <h1>A new place<br>to <em>grow.</em></h1>
+            <p class="hero-intro">Explore our Kazanchis development and ask about the current offer.</p>
+            <a class="button button-primary" href="#offers">View latest offers <span aria-hidden="true">↓</span></a>
+          </div>
+        </article>
+        <article class="hero-slide" aria-hidden="true">
+          <img class="hero-image" src="images/A.png" alt="Architectural rendering of Bole Atlas apartments">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="eyebrow light">NOW BUILDING · BOLE ATLAS</p>
+            <h1>Find your<br><em>place.</em></h1>
+            <p class="hero-intro">Book a private visit and speak with our team about Bole Atlas.</p>
+            <a class="button button-primary" href="#contact" data-contact-project="Bole Atlas">Book a visit <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+      <div class="hero-controls" aria-label="Hero slideshow controls">
+        <button type="button" data-slide-previous aria-label="Previous slide">←</button>
+        <span class="hero-index" aria-live="polite">01 / 04</span>
+        <button type="button" data-slide-next aria-label="Next slide">→</button>
+        <button type="button" data-slide-toggle aria-label="Pause slideshow">Ⅱ</button>
+      </div>
+    </section>
+
+    <section class="projects section-shell" id="projects">
+      <div class="section-heading">
+        <div><p class="eyebrow">OUR PROJECTS</p><h2>Places to call<br><em>your own.</em></h2></div>
+        <p>Explore our delivered homes and developments in progress across Addis Ababa. Contact us for project information or to arrange a visit.</p>
+      </div>
+      <div class="development-grid">
+        <article class="development-card" id="kazanchis" data-project="kazanchis">
+          <img class="development-image" data-project-image="kazanchis" src="images/photo_2026-03-26_22-09-31.jpg" alt="Compass Properties development in Kazanchis" loading="lazy">
+          <div class="development-copy">
+            <div class="development-meta"><span>KAZANCHIS</span><span class="status building" data-project-status="kazanchis"><i></i><span class="status-label">Under construction</span></span></div>
+            <h3>City living, with room to grow.</h3>
+            <p data-project-summary="kazanchis">A mixed-use development bringing apartments and shops together in Kazanchis.</p>
+            <div class="project-actions">
+              <button class="button button-outline-dark" type="button" data-open-details="kazanchis">Details &amp; floor plans</button>
+              <a class="button button-outline-dark" href="#contact" data-contact-project="Kazanchis">Book a visit</a>
+              <a class="text-link" href="https://wa.me/251985505722?text=Hello%20Compass%20Properties%2C%20I%27d%20like%20to%20book%20a%20visit%20to%20Kazanchis." target="_blank" rel="noreferrer">WhatsApp ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="development-card" id="bole-atlas" data-project="bole-atlas">
+          <img class="development-image" data-project-image="bole-atlas" src="images/A.png" alt="Architectural rendering of Bole Atlas apartments" loading="lazy">
+          <div class="development-copy">
+            <div class="development-meta"><span>BOLE ATLAS</span><span class="status building" data-project-status="bole-atlas"><i></i><span class="status-label">Under construction</span></span></div>
+            <h3>A considered place to live.</h3>
+            <p data-project-summary="bole-atlas">An apartment development taking shape in Bole Atlas.</p>
+            <div class="project-actions">
+              <button class="button button-outline-dark" type="button" data-open-details="bole-atlas">Details &amp; floor plans</button>
+              <a class="button button-outline-dark" href="#contact" data-contact-project="Bole Atlas">Book a visit</a>
+              <a class="text-link" href="https://wa.me/251985505722?text=Hello%20Compass%20Properties%2C%20I%27d%20like%20to%20book%20a%20visit%20to%20Bole%20Atlas." target="_blank" rel="noreferrer">WhatsApp ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="development-card" id="meskel-flower" data-project="meskel-flower">
+          <img class="development-image" data-project-image="meskel-flower" src="images/photo_2026-03-26_22-09-28.jpg" alt="Compass Properties homes in Meskel Flower" loading="lazy">
+          <div class="development-copy">
+            <div class="development-meta"><span>MESKEL FLOWER</span><span class="status delivered" data-project-status="meskel-flower"><i></i><span class="status-label">Delivered</span></span></div>
+            <h3>Homes in the heart of the city.</h3>
+            <p data-project-summary="meskel-flower">A delivered residential development in one of Addis Ababa’s established neighborhoods.</p>
+            <div class="project-actions">
+              <a class="button button-outline-dark" href="#contact" data-contact-project="Meskel Flower">Project information</a>
+              <a class="text-link" href="https://wa.me/251985505722?text=Hello%20Compass%20Properties%2C%20I%27d%20like%20information%20about%20Meskel%20Flower." target="_blank" rel="noreferrer">WhatsApp ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="section-status" id="site-data-status" role="status" aria-live="polite" hidden></p>
+    </section>
+
+    <section class="offers" id="offers">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">LATEST OFFERS</p><h2>A little more<br><em>within reach.</em></h2></div>
+          <p>Ask our team about available apartments, current offer conditions and payment details.</p>
+        </div>
+        <div class="offer-grid">
+          <article class="offer-card offer-featured">
+            <p class="offer-label">KAZANCHIS · STUDIO</p>
+            <p class="offer-size">55 m<sup>2</sup></p>
+            <h3>Studio apartment · YK-G</h3>
+            <p>Listed at 115,000–120,000 ETB/m² by side. From 15% down payment. Brochure payment discounts are up to 15% on the paid amount.</p>
+            <div class="offer-actions"><button class="button button-outline-dark" type="button" data-open-details="kazanchis">View floor plan</button><a class="button button-primary" href="#contact" data-contact-project="Kazanchis">Request this unit <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="offer-card">
+            <p class="offer-label">BOLE ATLAS · ONE BEDROOM</p>
+            <p class="offer-size">80 m<sup>2</sup></p>
+            <h3>One-bedroom apartment</h3>
+            <p>Listed at 135,000 ETB/m² on floors 3–8 and 140,000 ETB/m² on floors 9–14. From 15% down payment.</p>
+            <div class="offer-actions"><button class="button button-outline-dark" type="button" data-open-details="bole-atlas">View floor plan</button><a class="button button-primary" href="#contact" data-contact-project="Bole Atlas">Request this unit <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="offer-card shop-offer">
+            <p class="offer-label">KAZANCHIS · RETAIL SHOP</p>
+            <p class="offer-size">15.12 m<sup>2</sup></p>
+            <h3>Smallest listed shop · YK-S-1</h3>
+            <p>Listed at 240,000 ETB/m² (indicative total: 3,628,800 ETB). Shops on floors 4–5; from 15% down payment.</p>
+            <div class="offer-actions"><button class="button button-outline-dark" type="button" data-open-details="kazanchis-shop">View shop layout</button><a class="button button-primary" href="#contact" data-contact-project="Kazanchis Shop">Request shop details <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+        <p class="offer-note">Offer figures are transcribed from the supplied sales kits. Payment discounts are based on the brochure schedule, apply to the paid amount, and should be confirmed with the sales team. Availability and prices may change.</p>
+      </div>
+    </section>
+
+    <dialog class="details-dialog" id="details-kazanchis" aria-labelledby="details-kazanchis-title">
+      <div class="details-header"><div><p class="eyebrow">KAZANCHIS · STUDIO APARTMENT</p><h2 id="details-kazanchis-title">Studio · 55 m<sup>2</sup></h2></div><button class="dialog-close" type="button" aria-label="Close details">×</button></div>
+      <div class="details-gallery">
+        <figure><img src="images/floorplans/kazanchis-studio-55sqm.png" alt="55 square metre Kazanchis studio floor plan, type YK-G" loading="lazy"><figcaption>FLOOR PLAN · STUDIO TYPE · 55 m<sup>2</sup></figcaption></figure>
+        <figure><img src="images/photo_2026-03-26_22-09-30.jpg" alt="Architectural rendering of the Kazanchis development" loading="lazy"><figcaption>3D DEVELOPMENT RENDERING · ILLUSTRATIVE</figcaption></figure>
+      </div>
+      <ul class="details-facts"><li>Studio layout · Type YK-G</li><li>Listed rate: 115,000–120,000 ETB/m<sup>2</sup>, depending on side</li><li>From 15% down payment for studios and one-bedroom units</li><li>Brochure delivery time: 30 months</li><li>Brochure discounts vary by payment and apply to the paid amount</li></ul>
+      <a class="button button-primary" href="#contact" data-contact-project="Kazanchis" data-close-dialog>Request this unit <span aria-hidden="true">↗</span></a>
+    </dialog>
+
+    <dialog class="details-dialog" id="details-bole-atlas" aria-labelledby="details-bole-atlas-title">
+      <div class="details-header"><div><p class="eyebrow">BOLE ATLAS · ONE BEDROOM</p><h2 id="details-bole-atlas-title">One bedroom · 80 m<sup>2</sup></h2></div><button class="dialog-close" type="button" aria-label="Close details">×</button></div>
+      <div class="details-gallery">
+        <figure><img src="images/floorplans/atlas-one-bedroom-80sqm.png" alt="80 square metre Bole Atlas one-bedroom floor plan, type CB-L" loading="lazy"><figcaption>FLOOR PLAN · ONE BEDROOM TYPE · 80 m<sup>2</sup></figcaption></figure>
+        <figure><img src="images/B.png" alt="Architectural rendering of the Bole Atlas development" loading="lazy"><figcaption>3D DEVELOPMENT RENDERING · ILLUSTRATIVE</figcaption></figure>
+      </div>
+      <ul class="details-facts"><li>One-bedroom layout · Type CB-L</li><li>Listed rate: 135,000 ETB/m<sup>2</sup> on floors 3–8; 140,000 ETB/m<sup>2</sup> on floors 9–14</li><li>From 15% down payment for one- and two-bedroom units</li><li>Brochure delivery time: 27 months</li><li>Brochure discounts vary by payment and apply to the paid amount</li></ul>
+      <a class="button button-primary" href="#contact" data-contact-project="Bole Atlas" data-close-dialog>Request this unit <span aria-hidden="true">↗</span></a>
+    </dialog>
+
+    <dialog class="details-dialog" id="details-kazanchis-shop" aria-labelledby="details-kazanchis-shop-title">
+      <div class="details-header"><div><p class="eyebrow">KAZANCHIS · RETAIL SPACE</p><h2 id="details-kazanchis-shop-title">Shop · 15.12 m<sup>2</sup></h2></div><button class="dialog-close" type="button" aria-label="Close details">×</button></div>
+      <div class="details-gallery">
+        <figure><img src="images/floorplans/kazanchis-shop-layout.png" alt="Kazanchis shop floor layout with units and listed floor areas" loading="lazy"><figcaption>SHOPS FLOOR PLAN · LISTED UNITS AND AREAS</figcaption></figure>
+        <figure><img src="images/COMPASS 5.jpg" alt="Architectural rendering associated with the Kazanchis development" loading="lazy"><figcaption>3D DEVELOPMENT RENDERING · ILLUSTRATIVE</figcaption></figure>
+      </div>
+      <ul class="details-facts"><li>Smallest listed shop: YK-S-1 · 15.12 m<sup>2</sup></li><li>Listed rate: 240,000 ETB/m<sup>2</sup> · indicative total: 3,628,800 ETB before applicable discount</li><li>From 15% down payment</li><li>Brochure delivery time: 18 months</li><li>Listed for floors 4 and 5, without price escalation per brochure</li></ul>
+      <a class="button button-primary" href="#contact" data-contact-project="Kazanchis Shop" data-close-dialog>Request shop details <span aria-hidden="true">↗</span></a>
+    </dialog>
+
+    <section class="about section-shell" id="about">
+      <div class="about-copy">
+        <p class="eyebrow">ABOUT COMPASS PROPERTIES</p>
+        <h2>Rooted in Addis.<br><em>Building for life.</em></h2>
+        <p>Compass Properties develops homes and mixed-use spaces in Addis Ababa. We work with the character of each neighborhood and focus on creating places for everyday life.</p>
+        <a class="button button-outline-dark" href="#contact">Speak with our team <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="about-facts" aria-label="Compass Properties at a glance">
+        <div><strong>04</strong><span>Developments in Addis Ababa</span></div>
+        <div><strong>02</strong><span>Delivered projects</span></div>
+        <div><strong>ADDIS</strong><span>Locally rooted experience</span></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-layout section-shell">
+        <div class="contact-copy">
+          <p class="eyebrow light">CONTACT US</p>
+          <h2>Let’s find<br><em>your next home.</em></h2>
+          <p>Ask about a project, arrange a visit or speak directly with our team.</p>
+          <div class="contact-links">
+            <a href="tel:0985505722">Call 0985505722 <span aria-hidden="true">↗</span></a>
+            <a href="https://wa.me/251985505722" target="_blank" rel="noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+            <a href="https://t.me/Nathanproperties" target="_blank" rel="noreferrer">Telegram @Nathanproperties <span aria-hidden="true">↗</span></a>
+            <a href="mailto:frehowtnathan@gmail.com">frehowtnathan@gmail.com <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label>Your name<input name="name" autocomplete="name" maxlength="100" required></label>
+          <label>Email address<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+          <label>Phone number <span>(optional)</span><input name="phone" type="tel" autocomplete="tel" maxlength="40"></label>
+          <label>Project of interest <span>(optional)</span>
+            <select name="project">
+              <option value="">Choose a project</option>
+              <option value="Meskel Flower">Meskel Flower</option>
+              <option value="Kazanchis">Kazanchis</option>
+              <option value="Bole Atlas">Bole Atlas</option>
+              <option value="Kazanchis Shop">Kazanchis Shop</option>
+            </select>
+          </label>
+          <label class="contact-message-field">How can we help?<textarea name="message" rows="4" minlength="10" maxlength="3000" required></textarea></label>
+          <div class="contact-submit"><button class="button button-primary" type="submit">Send message <span aria-hidden="true">↗</span></button><p id="contact-message" role="status" aria-live="polite"></p></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main section-shell">
+      <a class="footer-brand" href="#home" aria-label="Compass Properties home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 52 52" focusable="false"><circle cx="26" cy="26" r="23" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M26 3 32 20 49 26 32 32 26 49 20 32 3 26 20 20Z" fill="currentColor"/><path d="M17 25.5 26 18l9 7.5V36H17Z" fill="var(--paper)"/><path d="M23 29h6v7h-6zM19.5 27h2.8v2.8h-2.8zm10.2 0h2.8v2.8h-2.8z" fill="var(--forest)"/></svg></span><span class="brand-wordmark">COMPASS<small>PROPERTIES</small></span></a>
+      <p>Thoughtfully building homes in Addis Ababa.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#projects">Projects</a>
+        <a href="#offers">Latest offers</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-legal">
+        <a href="tel:0985505722">0985505722</a>
+        <span>© <span id="year">2026</span> Compass Properties</span>
+        <a href="admin.html" rel="nofollow">Admin</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

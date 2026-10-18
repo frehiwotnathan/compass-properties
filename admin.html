@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#103c32">
+  <title>Compass Properties | Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+  <script type="module" src="js/admin.js"></script>
+</head>
+<body>
+  <header class="admin-header">
+    <a class="brand" href="index.html"><span class="brand-symbol">C<span>+</span></span><span class="brand-title">COMPASS<small>PROPERTIES · ADMIN</small></span></a>
+    <div class="admin-header-right"><a href="index.html">View public site ↗</a><button type="button" id="sign-out" hidden>Sign out</button></div>
+  </header>
+  <main class="admin-main">
+    <section class="login-panel" id="login-panel">
+      <p class="eyebrow">OWNER ACCESS · COMPASS PROPERTIES</p>
+      <h1>Welcome<br>back.</h1>
+      <p class="panel-copy">Sign in with the owner account created in Supabase Auth.</p>
+      <div class="config-notice" id="setup-notice" hidden></div>
+      <form id="login-form">
+        <label>Email address<input type="email" name="email" autocomplete="username" required></label>
+        <label>Password<input type="password" name="password" autocomplete="current-password" required></label>
+        <button class="primary-button" type="submit">Sign in <span>↗</span></button>
+        <p class="form-message" id="login-message" role="status" aria-live="polite"></p>
+      </form>
+      <p class="login-footnote">Access is limited to the owner account approved in the Compass admin table.</p>
+    </section>
+
+    <section class="dashboard" id="dashboard" hidden>
+      <div class="dashboard-top">
+        <div><p class="eyebrow">SITE MANAGEMENT · ADDIS ABABA</p><h1>Your projects,<br><em>your updates.</em></h1></div>
+        <p>Update project status and public copy, or add renderings, 3D tours, site updates and floor plans.</p>
+      </div>
+      <div class="dashboard-message" id="dashboard-message" role="status" aria-live="polite"></div>
+      <section class="admin-section">
+        <div class="admin-section-heading"><div><span class="section-label">01 / THE PORTFOLIO</span><h2>Project details</h2></div><span class="section-hint">Changes appear on the public site</span></div>
+        <div class="project-admin-list" id="project-list"><p class="loading-message">Loading projects…</p></div>
+      </section>
+      <section class="admin-section">
+        <div class="admin-section-heading"><div><span class="section-label">02 / CONTACT INBOX</span><h2>Messages from visitors</h2></div><span class="section-hint">Private · owner account only</span></div>
+        <div class="contact-message-list" id="contact-message-list"><p class="loading-message">Loading messages…</p></div>
+      </section>
+      <section class="admin-section media-admin">
+        <div class="admin-section-heading"><div><span class="section-label">03 / THE MATERIAL</span><h2>Add project media</h2></div><span class="section-hint">Images, MP4 tours, site updates or PDFs</span></div>
+        <p class="upload-warning">Uploaded files use public website storage. Do not upload private or internal documents.</p>
+        <form class="media-form" id="media-form">
+          <label>Project<select name="project_slug" id="media-project" required><option value="">Choose project</option></select></label>
+          <label>Media type<select name="kind" required><option value="">Choose media type</option><option value="project_render">Project rendering</option><option value="tour_1br">1-bedroom 3D tour</option><option value="tour_2br">2-bedroom 3D tour</option><option value="tour_3br">3-bedroom 3D tour</option><option value="construction_update">Construction update video</option><option value="floor_plan">Floor plan / sales PDF</option></select></label>
+          <label class="wide-field">Display title<input name="title" maxlength="100" placeholder="e.g. Kazanchis, east elevation" required></label>
+          <label class="wide-field">Image description for accessibility<input name="alt_text" maxlength="250" placeholder="Describe the image (optional)"></label>
+          <label class="wide-field">Choose file<input name="file" type="file" accept="image/jpeg,image/png,image/webp,video/mp4,application/pdf" required><small>Maximum upload size: 100 MB. MP4, JPG, PNG, WebP and PDF.</small></label>
+          <label class="check-field"><input name="is_public" type="checkbox" checked> Show this file on the public site</label>
+          <div class="wide-field media-actions"><button class="primary-button" type="submit">Upload media <span>↗</span></button><p class="form-message" id="upload-message" role="status" aria-live="polite"></p></div>
+        </form>
+        <div class="asset-list" id="asset-list"><p class="loading-message">Loading media…</p></div>
+      </section>
+    </section>
+  </main>
+  <footer class="admin-footer"><span>COMPASS PROPERTIES · PRIVATE ADMINISTRATION</span><a href="index.html">Return to public site ↑</a></footer>
+</body>
+</html>
